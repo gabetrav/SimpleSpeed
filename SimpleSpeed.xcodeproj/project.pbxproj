@@ -409,6 +409,7 @@
 				00E9CC0A1A48C2AD00867C2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00E9CC0B1A48C2AD00867C2D /* Build configuration list for PBXNativeTarget "SimpleSpeedTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				00E9CC0D1A48C2AD00867C2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

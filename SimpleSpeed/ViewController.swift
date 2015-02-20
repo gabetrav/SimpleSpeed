@@ -12,7 +12,7 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     var bool = false
-    var finalSpeed = "nil"
+    //var finalSpeed = "nil"
     var mphSpeed = 1
     var kphSpeed = 1
     
@@ -23,13 +23,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if (bool == false) {
             Button.setTitle("KPH", forState: UIControlState.Normal)
             bool = true
-            finalSpeed = "\(kphSpeed)"
+            //finalSpeed = "\(kphSpeed)"
 
         }
         else {
             Button.setTitle("MPH", forState: UIControlState.Normal)
             bool = false
-            finalSpeed = "\(mphSpeed)"
+            //finalSpeed = "\(mphSpeed)"
 
         }
     }
@@ -58,7 +58,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var kphSpeed = round(userSpeed.speed * 3.6)
         //println(kphSpeed)
         
-        finalSpeed = "\(mphSpeed)"
+        var finalSpeed = "\(mphSpeed)"
+        
+        if (bool == true) {
+            finalSpeed = "\(kphSpeed)"
+            
+        }
+        else {
+            finalSpeed = "\(mphSpeed)"
+            
+        }
         
         let stringLength = countElements(finalSpeed)
         let substringIndex = stringLength - 2
